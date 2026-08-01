@@ -1,8 +1,22 @@
 aid: plated
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/plated.png
 name: plated
-description: plated is a company surfaced as a portfolio company of slow-ventures, techstars and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: Plated was a meal-kit delivery company surfaced as a portfolio company of Slow Ventures
+  and Techstars and added to the API Evangelist network for enrichment. The company was acquired by
+  Albertsons in 2017 and later wound down; the plated.com domain now 301-redirects to safeway.com,
+  and no independent developer portal, API reference, SDK, or well-known surface remains. This profile
+  records the honest state of a defunct provider with no active API surface.
 url: https://raw.githubusercontent.com/api-evangelist/plated/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,15 +27,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Meal Kit
+- Food Delivery
+- E-Commerce
+- Consumer
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/plated-domain-security.yml
 - type: Website
   url: https://plated.com
